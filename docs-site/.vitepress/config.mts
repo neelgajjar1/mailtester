@@ -4,15 +4,15 @@ export default defineConfig({
   title: '@mailtester/core',
   description: 'Modern, high-performance email validation for Node.js',
   
-  base: '/mailtester/',
+  base: '/',
   
   head: [
-    ['link', { rel: 'icon', type: 'image/svg+xml', href: '/mailtester/logo.svg' }],
+    ['link', { rel: 'icon', type: 'image/svg+xml', href: '/logo.svg' }],
     ['meta', { name: 'theme-color', content: '#6366f1' }],
     ['meta', { property: 'og:type', content: 'website' }],
     ['meta', { property: 'og:title', content: '@mailtester/core - Email Validation' }],
     ['meta', { property: 'og:description', content: 'Modern, high-performance email validation for Node.js' }],
-    ['meta', { property: 'og:url', content: 'https://kazmiali.github.io/mailtester/' }],
+    ['meta', { property: 'og:url', content: 'https://mailtester.alikazmi.dev/' }],
   ],
 
   themeConfig: {
