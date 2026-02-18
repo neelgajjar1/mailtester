@@ -529,9 +529,23 @@ yarn test
 yarn build
 ```
 
+## Author
+
+<div align="center">
+
+**Muhammad Ali Kazmi**
+
+Full-stack developer passionate about building fast, developer-friendly open-source tools.
+
+[![Portfolio](https://img.shields.io/badge/Portfolio-alikazmi.dev-E63946?style=flat-square&logo=globe&logoColor=white)](https://alikazmi.dev)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-alikazmidev-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://linkedin.com/in/alikazmidev)
+[![GitHub](https://img.shields.io/badge/GitHub-kazmiali-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/kazmiali)
+
+</div>
+
 ## License
 
-MIT © [Ali Kazmi](https://github.com/kazmiali)
+MIT © [Muhammad Ali Kazmi](https://alikazmi.dev)
 
 ---
 

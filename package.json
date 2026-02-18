@@ -30,7 +30,10 @@
     "typo",
     "typescript"
   ],
-  "author": "Ali Kazmi",
+  "author": {
+    "name": "Muhammad Ali Kazmi",
+    "url": "https://alikazmi.dev"
+  },
   "license": "MIT",
   "repository": {
     "type": "git",
