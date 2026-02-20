@@ -85,7 +85,37 @@
   --vp-sidebar-bg-color: #121212;
 
   --vp-code-tab-bg: #1A1A1A;
+
+  /* Copy button dark mode */
+  --vp-code-copy-code-bg: #2d2d3a;
+  --vp-code-copy-code-hover-bg: #3d3d4a;
+  --vp-code-copy-code-active-text: #e2e8f0;
 }
+
+/* Copy button — dark mode explicit fix */
+.dark div[class*='language-'] > button.copy {
+  background-color: #2d2d3a !important;
+  border-color: #555 !important;
+  opacity: 1 !important;
+}
+
+.dark div[class*='language-'] > button.copy:hover {
+  background-color: #3d3d4a !important;
+  border-color: #888 !important;
+}
+
+.dark div[class*='language-'] > button.copy::before {
+  filter: invert(1);
+}
+
+.dark div[class*='language-'] > button.copy.copied::before {
+  filter: invert(1);
+}
+
+.dark div[class*='language-'] > button.copy + span {
+  color: #c8e6c9 !important;
+  background-color: #2d2d3a !important;
+  border-color: #555 !important;
 
 /* Typography */
 h1, h2, h3, h4, h5, h6 {
@@ -356,7 +386,8 @@ div[class*='language-'] > span.lang {
 }
 
 /* Tables */
-table {
+.vp-doc div[class*='language-'] + table,
+.vp-doc table {
   border-radius: 0 !important;
   border: 3px solid var(--bauhaus-black) !important;
   width: 100% !important;
@@ -365,11 +396,21 @@ table {
   border-collapse: collapse !important;
 }
 
-.vp-doc table {
-  width: 100% !important;
-  display: table !important;
+/* Responsive table wrapper — horizontal scroll on mobile */
+.vp-doc :not(pre) > table {
+  display: block !important;
+  overflow-x: auto !important;
+  -webkit-overflow-scrolling: touch;
 }
 
+@media (min-width: 768px) {
+  .vp-doc :not(pre) > table {
+    display: table !important;
+    overflow-x: unset;
+  }
+}
+
+.dark .vp-doc table,
 .dark table {
   border-color: #444 !important;
 }
